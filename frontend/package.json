@@ -12,14 +12,24 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
+<<<<<<< HEAD
     "@tailwindcss/vite": "^4.2.1",
+=======
+    "@tailwindcss/vite": "^4.2.0",
+    "bootstrap": "^5.3.8",
+    "express": "^5.2.1",
+>>>>>>> 3c8150221877f588651f005641cba1814c92d189
     "lucide-react": "^0.563.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-icons": "^5.5.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.13.0",
+<<<<<<< HEAD
     "tailwindcss": "^4.2.1"
+=======
+    "tailwindcss": "^4.2.0"
+>>>>>>> 3c8150221877f588651f005641cba1814c92d189
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
