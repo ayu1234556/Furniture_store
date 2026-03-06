@@ -15,10 +15,10 @@ const Navbar = () => {
           color: "white"
         }}
       >
-        {/* 🔥 LEFT SECTION */}
+
+        {/* LEFT SECTION */}
         <div style={{ display: "flex", alignItems: "center", gap: "30px" }}>
           
-          {/* ROUND LOGO */}
           <div
             style={{
               width: "160px",
@@ -42,24 +42,14 @@ const Navbar = () => {
             />
           </div>
 
-          {/* BRAND NAME */}
-          <div
-            style={{
-              fontSize: "60px",
-              fontWeight: "900",
-              whiteSpace: "nowrap"
-            }}
-          >
-            
-          </div>
         </div>
 
-        {/* 🔥 SEARCH SECTION (FULL FILL) */}
+        {/* SEARCH SECTION */}
         <div
           style={{
             display: "flex",
-            flex: 1,              // 🔥 takes all remaining space
-            margin: "0 60px"      // small balanced gap
+            flex: 1,
+            margin: "0 60px"
           }}
         >
           <input
@@ -73,6 +63,8 @@ const Navbar = () => {
               fontWeight: "700",
               border: "none",
               outline: "none",
+              backgroundColor: "white",  // ✅ White background
+              color: "black",
               borderTopLeftRadius: "12px",
               borderBottomLeftRadius: "12px"
             }}
@@ -95,10 +87,9 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* 🔥 RIGHT SECTION */}
+        {/* RIGHT SECTION */}
         <div style={{ display: "flex", alignItems: "center", gap: "50px" }}>
 
-          {/* ACCOUNT */}
           <div
             style={{
               display: "flex",
@@ -131,9 +122,9 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* CART */}
           <FaShoppingCart size={60} color="white" />
         </div>
+
       </div>
     </div>
   );

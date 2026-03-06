@@ -8,7 +8,7 @@ function Products() {
   fetch("http://localhost:5000/products")
     .then(res => res.json())
     .then(data => {
-      console.log("DATA:", data);   // 👈 ye add karo
+      console.log("DATA:", data);   
       setProducts(data);
     })
     .catch(err => console.error(err));

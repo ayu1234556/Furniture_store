@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import almiban from "../assets/almiban.jpg";
 import sofaban from "../assets/sofaban.jpg";
 import tableban from "../assets/tableban.jpg";
@@ -20,42 +19,18 @@ const BannerSection = () => {
   };
 
   return (
-    <div
-      className="position-relative d-flex justify-content-center align-items-center"
-      style={{
-        height: "80vh",          // smaller height
-        margin: "20px 40px",     // left-right margin
-        overflow: "hidden",
-        borderRadius: "15px"
-      }}
-    >
-      {/* Image */}
+    <div className="relative flex items-center justify-center h-[80vh] mx-10 my-5 overflow-hidden rounded-2xl bg-gray-100">
+
       <img
         src={images[current]}
         alt="Furniture Banner"
-        className="w-100 h-100"
-        style={{
-          objectFit: "contain",   // prevents cutting
-          backgroundColor: "#f8f9fa"
-        }}
+        className="w-full h-full object-contain"
       />
 
       {/* Left Arrow */}
       <button
         onClick={prevSlide}
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "30px",
-          transform: "translateY(-50%)",
-          background: "rgba(0,0,0,0.6)",
-          color: "white",
-          border: "none",
-          fontSize: "60px",      // triple size
-          padding: "10px 20px",
-          cursor: "pointer",
-          borderRadius: "50%"
-        }}
+        className="absolute left-8 top-1/2 -translate-y-1/2 bg-black/60 text-white text-6xl px-6 py-3 rounded-full hover:bg-black"
       >
         ❮
       </button>
@@ -63,19 +38,7 @@ const BannerSection = () => {
       {/* Right Arrow */}
       <button
         onClick={nextSlide}
-        style={{
-          position: "absolute",
-          top: "50%",
-          right: "30px",
-          transform: "translateY(-50%)",
-          background: "rgba(0,0,0,0.6)",
-          color: "white",
-          border: "none",
-          fontSize: "60px",      // triple size
-          padding: "10px 20px",
-          cursor: "pointer",
-          borderRadius: "50%"
-        }}
+        className="absolute right-8 top-1/2 -translate-y-1/2 bg-black/60 text-white text-6xl px-6 py-3 rounded-full hover:bg-black"
       >
         ❯
       </button>
